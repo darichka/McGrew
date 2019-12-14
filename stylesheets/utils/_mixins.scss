@@ -1,0 +1,13 @@
+@mixin box-sizing($property) {
+    -webkit-box-sizing: $property;
+    -moz-box-sizing: $property;
+    box-sizing: $property;
+}
+
+@mixin flex-container($flex-direct, $flex-wrap, $align-items,  $justify-content){
+    display: flex;
+    flex-wrap: $flex-wrap;
+    flex-direction: $flex-direct;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

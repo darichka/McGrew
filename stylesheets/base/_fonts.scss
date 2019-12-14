@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url('../fonts/montserrat/montserrathairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserrat/montserratlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'),  url('../fonts/montserrat/montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'), url('../fonts/montserrat/montserratblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensans/opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/opensans/opensanslightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),  url('../fonts/opensans/opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/opensans/opensansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensans/opensanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/opensans/opensanssemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensans/opensansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/opensans/opensansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/opensans/opensansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'),  url('../fonts/opensans/opensansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+$font-primary: "Open Sans";
+$font-buttons: "Montserrat";
+$font-cost: "Montserrat";
+$font-link-header: "Montserrat";
+
+// sizes
+
+$font-size-header-link: 15px/19px;
+$font-size-cover-message: 26px;
+$font-size-plan-header: 24px;
+$font-size-timer: 21px;
+$font-size-h4: 18px;
+$font-size-primary: 15px;
+$font-size-small: 13px;
+$font-size-very-small: 11px;
+$font-size-cost: 32px;
+
+//payment-page
+$font-size-payment-primary: 10px;
+$font-size-payment-small: 9px;
+$font-size-payment-exp-time-dev: 18px;
+$font-size-choosen-plan-header: 16px;

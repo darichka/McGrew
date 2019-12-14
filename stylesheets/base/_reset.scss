@@ -1,0 +1,24 @@
+*{  
+    @include box-sizing(border-box);
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body{
+	// background-color: $color-primary;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover, a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, button:hover{
+	cursor: pointer;
+}
