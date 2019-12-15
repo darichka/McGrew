@@ -1,0 +1,34 @@
+.menu{
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: $menu-color;
+    .menu__link{
+        display: flex;
+        align-items: center;
+        margin-left: $menu-margin;
+        padding: 0 $text-padding;
+        border-bottom: $header-menu-border;
+        border-color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-menu;
+    }
+    .menu__link:first-child{
+        margin-left: 0;
+    }
+    .menu__link:last-child{
+        padding-right: 0;
+    }
+    .active{
+        border-color: $highlight-color;
+    }
+    .menu__link:hover, .active{
+        color: $light-color;
+        text-shadow: 0.5px 0.5px $primary-color;
+    }
+}
+
+
+

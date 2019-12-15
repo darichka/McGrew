@@ -1,1 +1,14 @@
+@mixin box-shadow($color){
+    box-shadow: $button-shadow $color
+}
 
+.button{
+    height: $button-height;
+    width: $button-width;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: $button-hero-color;
+    @include box-shadow($button-hero-shadow);
+    color: $light-color;
+}

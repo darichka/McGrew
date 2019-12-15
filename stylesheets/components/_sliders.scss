@@ -1,0 +1,10 @@
+.slider{
+    .slider__item{
+        display: none;
+        max-width: $slider-item-width;
+        overflow: hidden;
+    }
+    .active{
+        display: block;
+    }
+}

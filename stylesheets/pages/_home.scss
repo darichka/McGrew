@@ -1,0 +1,130 @@
+.hero{
+    align-items: stretch;
+    height: 100vh;
+    background: url(../imgs/hero.png) center no-repeat;
+    background-size: cover;
+    padding: 0;
+    .hero__header{
+
+    }
+    .hero__hero-tagline{
+        
+    }
+}
+.hero-heading{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 $layout-padding;
+    color: $light-color;
+    text-shadow: 1px 1px $primary-color;
+    .hero-heading__tagline{
+    }
+    .hero-heading__body{
+        max-width: 40%;
+        padding: 2*$block-padding 0 $block-padding 0;
+        font-family: $family-primary;
+        font-size: 1em;
+    }
+    .hero-heading__button{
+        margin-top: $block-padding;
+    }
+}
+.tagline-underline{
+    span{
+        padding: $block-padding 0;
+        border-bottom:  $underline-border;
+        border-color: transparent;
+    }
+    .underline{
+        border-color: $highlight-color;
+    }
+}
+
+////section partners
+.partners{
+    flex-direction: row;
+    justify-content: space-between;
+    height: $partenrs-height;
+}
+
+///////////age section////////////
+.age{
+    justify-content: flex-end;
+    height: $age-height;
+    background-color: $highlight-color;
+    color: $light-color;
+    .age__body{
+        padding: 2*$block-padding 0;
+    }
+    .age__picture{
+        position: relative;
+        padding-top: 2*$block-padding;
+        bottom: -10px;
+    }
+}
+
+///////////////////mbis-purpose section/////////
+.mbis-purpose{
+    height: $mbis-purpose-height; 
+    justify-content: center;
+    .mbis-puppose__mission{
+        max-width: 57%;
+        text-align: center;
+    }
+    .mbis-puppose__mission, .mbis-purpose__header, .mbis-purpose__button{
+        margin: $block-padding 0 ;
+    } 
+}
+
+///////////////home-support//////////////
+.home-support{
+    flex-direction: row;
+    justify-content: center;;
+    position: relative;
+    height: $home-support-height;
+    margin-bottom: $home-support-margin;
+    background: url(../imgs/home-support.png) center no-repeat;
+    background-size: cover;
+    .home-suppot__slider{
+        position: absolute;
+        bottom: -$slider-parallax;
+    }
+}
+
+///////////////career////////////
+.career{
+    flex-direction: row;
+    justify-content: stretch;
+    height: $career-height;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: $home-support-margin - $slider-parallax;
+    .career__career-img{
+        width: 51%;
+    }
+    .career__career-body{
+        width: 49%;
+    }
+}
+.career-body{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $slider-parallax $layout-padding $slider-parallax+$text-padding;
+    background-color: $career-baclground;
+    color: $light-color;
+    .career-body__agitation{
+        font-family: "Lato-Italic";
+    }
+    .career-body__description{
+        max-width: 90%;
+    }
+    .career-body__button{
+        background-color: $career-button-color;
+        @include box-shadow($career-shadow-color);
+    }
+}

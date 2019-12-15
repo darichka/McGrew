@@ -6,7 +6,9 @@
 }
 
 body{
-	// background-color: $color-primary;
+	font-size: $font-size-primary;
+	font-family: $family-primary;
+	color: $primary-color;
 }
 
 ul {
@@ -21,4 +23,11 @@ a:hover, a
 
 a:hover, button:hover{
 	cursor: pointer;
+}
+
+button{
+	border-radius: 0;
+	border: none;
+	color: inherit;
+	font-family: inherit;
 }
