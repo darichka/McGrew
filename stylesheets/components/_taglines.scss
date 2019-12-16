@@ -3,15 +3,44 @@ h1{
 
 h2{
     font-family: $family-h2;
-    font-size: $font-size-h2;
+    font-size: $font-size-h2; 
+    @media screen  and (max-width: 840px){
+        font-size: $font-size-h2*0.8;
+    } 
+
+    @media screen  and (max-width: $sm){
+        font-size: $font-size-h2*0.7;
+    }
+
+    @media screen  and (max-width: $vsm){
+        font-size: $font-size-h2*0.5;
+    } 
 }
 h3{
 }
 h4{
     font-family: $family-h4;
     font-size: $font-size-h4;
+    
+    @media screen  and (max-width: 840px){
+        font-size: $font-size-h4*0.8;
+    } 
+    @media screen  and (max-width: $sm){
+        font-size: $font-size-h4*0.7;
+    } 
+    @media screen  and (max-width: $vsm){
+        font-size: $font-size-h4*0.5;
+    }
 }
 p{
     font-size: 1em;
     line-height: 1.8em;
+    padding: $text-padding*2 0;
+    @media screen and (max-width: $lg){
+        line-height: 1.5em;
+    }
+    @media screen and (max-width: 900px){
+        line-height: 1.3em;
+        font-size: 0.95em;
+    }
 }

@@ -7,6 +7,7 @@
     <title>McGrew</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 </head>
 <body>
@@ -15,15 +16,24 @@
             <div class="header__logo">
                 <img src="imgs/logo.png" alt="McGrew Behavior Services" />
             </div>
+            <div class="header__mobile-menu mobile-menu" id="mobile-menu">
+                <div class="mobile-menu__line"></div>
+                <div class="mobile-menu__line"></div>
+                <div class="mobile-menu__line"></div>
+            </div>
             <nav class="header__menu menu">
                 <a href="https://www.google.com" class="menu__item menu__link active">
                     Home
                 </a>
                 <div class="menu__item menu__dropdown-header">
-                    <a href="#" class="menu__link">About us</a>
-                    <div class="menu__dropdown">
-                        <a href="" class="menu__link-dropdown">Our mission</a>
-                        <a href="" class="menu__link-dropdown">Career</a>
+                    <a href="#" class="menu__link">
+                        About us 
+                        <i class="demo-icon icon-right-dir" style="display: none"></i> 
+                        <i class="demo-icon icon-down-dir"></i>
+                    </a>
+                    <div class="menu__dropdown hidden">
+                        <a href="https://www.google.com" class="menu__link-dropdown">Our mission</a>
+                        <a href="https://www.google.com" class="menu__link-dropdown">Career</a>
                     </div>
                 </div>
                 <a href="https://www.google.com" class="menu__item menu__link">
@@ -35,7 +45,7 @@
             <h2 class="hero-heading__tagline tagline-underline"><span> We can </span><span class="underline"> help</span>.</h2>
             <p class="hero-heading__body">Teaching independence to the lives of the people you love with reliable, 
                 individualized emotional and behavioral therapy.</p>
-            <button class="hero-heading__button button" formaction="https://www.google.com" >FIND HELP HERE</button>
+            <button class="hero-heading__button button" onclick="linkGoogle()" >FIND HELP HERE</button>
         </div>
     </section>
     <section class="partners">
@@ -57,7 +67,7 @@
             Families, organizations and health care providers in Northern California. 
             Our knowledge and experience provide the specialized support people need when overcoming behavioral challenges.
         </p>
-        <button class="mbis-purpose__button button">Contact us</button>
+        <button class="mbis-purpose__button button" onclick="linkGoogle()">Contact us</button>
     </section>
     <section class="home-support">
         <div class="home-suppot__slider slider">
@@ -86,7 +96,7 @@
                 We are always looking for highly motivated individuals who aligned with our committment to making a
                  difference in the lives of other people. Whether you’re a BCBA or interested in ABA work we are interested in talking to you!
             </p>
-            <button class="career-body__button button">Find What's available</button>
+            <button class="career-body__button button" onclick="linkGoogle()">Find What's available</button>
         </div>
     </section>
     <footer class="footer">

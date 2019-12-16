@@ -1,10 +1,63 @@
 .header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: $header-height;
+    height: auto;
+    min-height: $header-height;
     padding: 0 $layout-padding;
+    .header__logo{
+        
+        max-width: 50%;
+        margin: $text-padding*2 0;
+        img{
+            max-width: 100%; 
+        }
+        @media screen and(max-width: $md){
+            max-width: 75%;
+        }
+    }
     .header__menu{
-
+        @media screen and(max-width: $md){
+            width: 100%;
+            height:0;
+            flex-direction: column;
+            align-items: stretch;
+            overflow: hidden;
+        }
+        .menu__item{
+            @media screen and(max-width: $md){
+                margin-left: 0;
+            }
+        }
+        .menu__item:first-child{
+            @media screen and(max-width: $md){
+                margin-left: 0;
+            }
+        }
+        .menu__link{
+            @media screen and(max-width: $md){
+                background: $mobile-menu-bg;
+            }
+        }
+        .menu__dropdown{
+            @media screen and(max-width: $md){
+                display: block;
+                position: static;
+                height: 0;
+                overflow: hidden;
+            }
+        }
+        .menu__link-dropdown{
+            @media screen and(max-width: $md){
+                padding-left: $menu-margin;
+                border-color: transparent;
+                background: $mobile-menu-bg;
+            }
+        }
+    }
+    @media screen and(max-width: $md){
+        min-height: 60px;
+        flex-wrap: wrap;
     }
 }

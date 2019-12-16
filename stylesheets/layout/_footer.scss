@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: $upper-footer-height;
+    min-height: $upper-footer-height;
     padding: $slider-parallax $layout-padding;
     font-size: $font-size-upper-footer;
     .upper-footer__menu{
@@ -21,6 +21,19 @@
             color: $primary-color;
             text-shadow: none;
         }
+        .menu__link{
+            padding-top: $text-padding;
+            padding-bottom: $text-padding;
+            @media screen and (max-width: $lg){
+                height: auto;
+            }
+        }
+    }
+    @media screen and (max-width: $lg){
+        min-height: auto;
+        height: auto;
+        padding: $slider-parallax/2 $layout-padding;
+        
     }
     .upper-footer__filler{
         
@@ -45,6 +58,9 @@
 .contacts{
     text-align: center;
     color: $footer-color;
+    a{
+        display: block;
+    }
     .contacts__email{
         font-family: "Lato-Bold";
         color: $button-hero-color;
