@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
     <title>McGrew</title>
-    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 </head>
 <body>
     <section class="hero">
@@ -14,13 +16,17 @@
                 <img src="imgs/logo.png" alt="McGrew Behavior Services" />
             </div>
             <nav class="header__menu menu">
-                <a href="https://www.google.com" class="menu__link active">
+                <a href="https://www.google.com" class="menu__item menu__link active">
                     Home
                 </a>
-                <a href="https://www.google.com" class="menu__link">
-                    About us
-                </a>
-                <a href="https://www.google.com" class="menu__link">
+                <div class="menu__item menu__dropdown-header">
+                    <a href="#" class="menu__link">About us</a>
+                    <div class="menu__dropdown">
+                        <a href="" class="menu__link-dropdown">Our mission</a>
+                        <a href="" class="menu__link-dropdown">Career</a>
+                    </div>
+                </div>
+                <a href="https://www.google.com" class="menu__item menu__link">
                     Contact
                 </a>
             </nav>
@@ -56,9 +62,18 @@
     <section class="home-support">
         <div class="home-suppot__slider slider">
             <div class="slider__container">
-                <img src="imgs/slider/slide1.png" alt="In home support" class="slider__item active">
-                <img src="imgs/slider/slide1.png" alt="In home support" class="slider__item">
-                <img src="imgs/slider/slide1.png" alt="In home support" class="slider__item">
+                <div class="slider__item">
+                    <img src="imgs/slider/slide1.png" alt="In home support" >
+                </div>
+                <div class="slider__item">
+                    <img src="imgs/slider/slide2.png" alt="In home support" >
+                </div>
+                <div class="slider__item">
+                    <img src="imgs/slider/slide1.png" alt="In home support" >
+                </div>
+                <div class="slider__item">
+                    <img src="imgs/slider/slide2.png" alt="In home support" >
+                </div>
             </div>
         </div>
     </section>
@@ -96,13 +111,17 @@
                 <div class="filler__item"></div>
             </div>
             <div class="upper-footer__contacts contacts">
-                <p class="contacts__mail">120 Theresa Ave, American Canyon, CA 94503 <br> 707.561.0134 </p>
-                <p class="contacts__email">familyresources@mbisinc.com</p>
+                <p class="contacts__mail">120 Theresa Ave, American Canyon, CA 94503 </p>
+                <a class="contacts__phone" href = "tel: 707.561.0134">707.561.0134</a>
+                <a class="contacts__email" href = "mailto: familyresources@mbisinc.com">familyresources@mbisinc.com</a>
             </div>
         </div>
         <div class="footer__lower-footer lower-footer">
             <p class="lower-footer__copyright">Copyright Ⓒ 2017 McGrews Behavior Services All Rights Reserved</p>
         </div>
     </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
